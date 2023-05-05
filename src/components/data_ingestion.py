@@ -19,6 +19,9 @@ class DataIngestion:
         self.ingestion_config = DataIngestionConfig()
 
     def initiate_data_ingestion(self):
+        '''
+        This method is responsible to get the data and splitting the into test and train.
+        '''
         logging.info('Entered into the data ingestion method')
         try:
             df = pd.read_csv('notebook/data/stud.csv')
